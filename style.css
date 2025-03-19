@@ -1,0 +1,124 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Tektur:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+body{
+    background-color: #eee;
+}
+
+.main{
+    width: 100%;
+}
+.main .container{
+    text-align: center;
+    margin-top: 50px;
+}
+.main .container form{
+    width: 700px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    margin: 8% auto;
+}
+.container form h1{
+    padding: 30px;
+    font-size: 2rem;
+    color: #323232;
+}
+.container form h1 span{
+    color: rgb(47, 92, 255);
+}
+.container form textarea{
+    width: 70%;
+    border-radius: 3px;
+    padding: 15px;
+    height: 100px;
+    border:1px solid #dfdfdf;
+}
+textarea::placeholder{
+    font-size: 1.5rem;
+    color: rgb(74, 74, 74);
+}
+.container form h2{
+    color: #2b2b2b;
+    padding: 30px;
+}
+.container form .type #select{
+    width: 67%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #dfdfdf;
+}
+.container form button{
+    padding: 10px 30px;
+    background-color: #3866ff;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius:5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.container form button:hover{
+    background-color: #253eff;
+    cursor: pointer;
+}
+/* Media query for small screens (mobile devices) */
+@media (max-width: 768px) {
+    .main .container form {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .container form textarea {
+        width: 90%;
+        height: 80px;
+    }
+    .container form .type #select {
+        width: 90%;
+    }
+    .container form button {
+        font-size: 1.2rem;
+        padding: 8px 20px;
+    }
+}
+
+/* Media query for extra small screens (very small mobile devices) */
+@media (max-width: 480px) {
+    .container form h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .container form h2 {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .container form textarea {
+        height: 60px;
+    }
+    .container form button {
+        font-size: 1rem;
+        padding: 6px 15px;
+    }
+}
+
+/* Media query for large screens (desktops) */
+@media (min-width: 1200px) {
+    .main .container form {
+        width: 800px;
+    }
+    .container form textarea {
+        width: 75%;
+    }
+    .container form .type #select {
+        width: 70%;
+    }
+}
